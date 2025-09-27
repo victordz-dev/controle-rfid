@@ -1,0 +1,1057 @@
+[
+    {
+        "id": "876e86ec8e42d839",
+        "type": "tab",
+        "label": "Backend",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "292dc9644b02cc3b",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": 20,
+        "collapse": false
+    },
+    {
+        "id": "91893eae69767314",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-dark",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#1a47f9",
+                "baseFont": "Trebuchet MS,Helvetica,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#097479",
+                    "value": "#1a47f9",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#1a47f9",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#6583fb",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#1a47f9",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "Trebuchet MS,Helvetica,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Dashboard Mahindra",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "ab8511e8af0b7298",
+        "type": "serial-port",
+        "name": "Leitor RFID",
+        "serialport": "COM7",
+        "serialbaud": "9600",
+        "databits": "8",
+        "parity": "none",
+        "stopbits": "1",
+        "waitfor": "",
+        "dtr": "none",
+        "rts": "none",
+        "cts": "none",
+        "dsr": "none",
+        "newline": "\\n",
+        "bin": "false",
+        "out": "char",
+        "addchar": "",
+        "responsetimeout": "10000"
+    },
+    {
+        "id": "d433fc5ed0280390",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "mqtt-dashboard.com",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "9904f6b5a48180f9",
+        "type": "MySQLdatabase",
+        "name": "",
+        "host": "localhost",
+        "port": "3306",
+        "db": "mahiindra_db",
+        "tz": "",
+        "charset": "UTF8"
+    },
+    {
+        "id": "d16b2f622b1f2385",
+        "type": "ui_spacer",
+        "z": "876e86ec8e42d839",
+        "name": "spacer",
+        "group": "",
+        "order": 2,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "cdb6159ec4a57478",
+        "type": "ui_spacer",
+        "z": "876e86ec8e42d839",
+        "name": "spacer",
+        "group": "",
+        "order": 4,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "31665071c12aadb5",
+        "type": "ui_group",
+        "name": "Acessos",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": 19,
+        "collapse": false
+    },
+    {
+        "id": "d947db93fb397810",
+        "type": "ui_tab",
+        "name": "Dados de Acesso",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "e735db5d84294151",
+        "type": "ui_group",
+        "name": "Acessos por dia",
+        "tab": "d947db93fb397810",
+        "order": 1,
+        "disp": true,
+        "width": 30,
+        "collapse": false
+    },
+    {
+        "id": "21989fba8825100d",
+        "type": "ui_group",
+        "name": "Acessos Por Hora",
+        "tab": "d947db93fb397810",
+        "order": 3,
+        "disp": true,
+        "width": 17,
+        "collapse": false
+    },
+    {
+        "id": "0ea8b332967c7a44",
+        "type": "ui_group",
+        "name": "Acessos por Minuto",
+        "tab": "d947db93fb397810",
+        "order": 4,
+        "disp": true,
+        "width": 17,
+        "collapse": false
+    },
+    {
+        "id": "f2341e2df8053285",
+        "type": "ui_group",
+        "name": "Acesso em tempo real",
+        "tab": "d947db93fb397810",
+        "order": 2,
+        "disp": true,
+        "width": 4,
+        "collapse": false
+    },
+    {
+        "id": "71fdcad98a82fa26",
+        "type": "ui_spacer",
+        "z": "876e86ec8e42d839",
+        "name": "spacer",
+        "group": "e735db5d84294151",
+        "order": 2,
+        "width": 26,
+        "height": 1
+    },
+    {
+        "id": "637fb2557d045126",
+        "type": "ui_spacer",
+        "z": "876e86ec8e42d839",
+        "name": "spacer",
+        "group": "e735db5d84294151",
+        "order": 4,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "5656c57f4505702a",
+        "type": "ui_spacer",
+        "z": "876e86ec8e42d839",
+        "name": "spacer",
+        "group": "e735db5d84294151",
+        "order": 6,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "bda008082dcd2aa0",
+        "type": "ui_spacer",
+        "z": "876e86ec8e42d839",
+        "name": "spacer",
+        "group": "e735db5d84294151",
+        "order": 7,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "d4ab51495f9db8f7",
+        "type": "ui_spacer",
+        "z": "876e86ec8e42d839",
+        "name": "spacer",
+        "group": "e735db5d84294151",
+        "order": 8,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "63eed3abe0a25994",
+        "type": "ui_spacer",
+        "z": "876e86ec8e42d839",
+        "name": "spacer",
+        "group": "e735db5d84294151",
+        "order": 9,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "37d735b313fc498b",
+        "type": "ui_spacer",
+        "z": "876e86ec8e42d839",
+        "name": "spacer",
+        "group": "e735db5d84294151",
+        "order": 10,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "cdf8ee4d25a4d184",
+        "type": "ui_spacer",
+        "z": "876e86ec8e42d839",
+        "name": "spacer",
+        "group": "e735db5d84294151",
+        "order": 11,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "348a07d478f6cc07",
+        "type": "ui_spacer",
+        "z": "876e86ec8e42d839",
+        "name": "spacer",
+        "group": "e735db5d84294151",
+        "order": 12,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "5ea13c743a4d8c0d",
+        "type": "serial in",
+        "z": "876e86ec8e42d839",
+        "name": "RFID",
+        "serial": "ab8511e8af0b7298",
+        "x": 70,
+        "y": 300,
+        "wires": [
+            [
+                "63e4fd26c7d46ccf",
+                "4b404294bd8b8868"
+            ]
+        ]
+    },
+    {
+        "id": "63e4fd26c7d46ccf",
+        "type": "function",
+        "z": "876e86ec8e42d839",
+        "name": "capturaID",
+        "func": "if (msg.payload.startsWith(\"MAIN_UID:\")) {\n    msg.payload = msg.payload.replace(\"MAIN_UID:\", \"\").trim();\n    var uid = msg.payload;\n    msg.topic = \"SELECT pontos FROM usuarios WHERE id = '\" + uid + \"';\";\n    return msg;\n}\nreturn null;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 200,
+        "y": 280,
+        "wires": [
+            [
+                "2178f17e32d8c5ab"
+            ]
+        ]
+    },
+    {
+        "id": "2178f17e32d8c5ab",
+        "type": "mysql",
+        "z": "876e86ec8e42d839",
+        "mydb": "9904f6b5a48180f9",
+        "name": "Banco de Dados",
+        "x": 370,
+        "y": 260,
+        "wires": [
+            [
+                "01c1af62e0e2fbad"
+            ]
+        ]
+    },
+    {
+        "id": "01c1af62e0e2fbad",
+        "type": "function",
+        "z": "876e86ec8e42d839",
+        "name": "verificaPontos",
+        "func": "let pontosArray = msg.payload;\nmsg.topic = \"Quantidade de usuários\"\n\nif (!Array.isArray(pontosArray) || pontosArray.length === 0) {\n    msg.payload = \"desconhecido\";\n} else {\n    let usuarioPontos = pontosArray[0].pontos;\n\n    if (usuarioPontos > 500) {\n        msg.payload = \"green\";\n    } else {\n        msg.payload = \"red\";\n    }\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 560,
+        "y": 260,
+        "wires": [
+            [
+                "2b19c33f3b252a8d",
+                "b85c224c9990452d",
+                "39e7e403a2956fcc",
+                "714d76215c1ab64b"
+            ]
+        ]
+    },
+    {
+        "id": "2b19c33f3b252a8d",
+        "type": "serial out",
+        "z": "876e86ec8e42d839",
+        "name": "RFID Response",
+        "serial": "ab8511e8af0b7298",
+        "x": 740,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "4b404294bd8b8868",
+        "type": "function",
+        "z": "876e86ec8e42d839",
+        "name": "envioMQTT",
+        "func": "if (msg.payload.startsWith(\"MSG:\")) {\n    msg.payload = msg.payload.replace(\"MSG:\", \"\").trim();\n    return msg;\n}\nreturn null;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 210,
+        "y": 320,
+        "wires": [
+            [
+                "b0dcbeee71a82765",
+                "6356e0ea27028500"
+            ]
+        ]
+    },
+    {
+        "id": "b0dcbeee71a82765",
+        "type": "mqtt out",
+        "z": "876e86ec8e42d839",
+        "name": "Trava Remota",
+        "topic": "sprint/victor",
+        "qos": "0",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "d433fc5ed0280390",
+        "x": 380,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "b85c224c9990452d",
+        "type": "function",
+        "z": "876e86ec8e42d839",
+        "name": "Usuários Por Minuto",
+        "func": "let accessDataPerMinute = flow.get('accessDataPerMinute') || [];\n\nconst now = new Date();\nconst currentMinute = now.getMinutes();\nconst currentHour = now.getHours();\nconst currentTime = `${currentHour}:${currentMinute}`;\n\nif (msg.payload === \"green\") {\n    let found = false;\n    for (let i = 0; i < accessDataPerMinute.length; i++) {\n        if (accessDataPerMinute[i].minuto === currentTime) {\n            accessDataPerMinute[i].usuarios++;\n            found = true;\n            break;\n        }\n    }\n\n    if (!found) {\n        accessDataPerMinute.push({ minuto: currentTime, usuarios: 1 });\n    }\n}\n\nflow.set('accessDataPerMinute', accessDataPerMinute);\n\nmsg.payload = accessDataPerMinute;\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 900,
+        "y": 260,
+        "wires": [
+            [
+                "5191d87e579cfa53"
+            ]
+        ]
+    },
+    {
+        "id": "a371542c1084ef1e",
+        "type": "ui_text",
+        "z": "876e86ec8e42d839",
+        "group": "e735db5d84294151",
+        "order": 1,
+        "width": 4,
+        "height": 1,
+        "name": "",
+        "label": "Visitantes Hoje",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "x": 1060,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "7e3925279f469f3d",
+        "type": "ui_gauge",
+        "z": "876e86ec8e42d839",
+        "name": "",
+        "group": "e735db5d84294151",
+        "order": 3,
+        "width": 14,
+        "height": 8,
+        "gtype": "gage",
+        "title": "Capacidade do Evento",
+        "label": "Pessoas",
+        "format": "{{msg.payload}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ff0000"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 1060,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "637cda5190871dc7",
+        "type": "ui_chart",
+        "z": "876e86ec8e42d839",
+        "name": "",
+        "group": "0ea8b332967c7a44",
+        "order": 1,
+        "width": 17,
+        "height": 11,
+        "label": "Entradas por Minuto",
+        "chartType": "bar",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "15",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": true,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "x": 1480,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5191d87e579cfa53",
+        "type": "split",
+        "z": "876e86ec8e42d839",
+        "name": "",
+        "splt": "\\n",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "property": "payload",
+        "x": 1090,
+        "y": 260,
+        "wires": [
+            [
+                "e881d5b010638adf"
+            ]
+        ]
+    },
+    {
+        "id": "e881d5b010638adf",
+        "type": "change",
+        "z": "876e86ec8e42d839",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "payload.minuto",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.usuarios",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1260,
+        "y": 260,
+        "wires": [
+            [
+                "637cda5190871dc7"
+            ]
+        ]
+    },
+    {
+        "id": "934450ffa3a49b58",
+        "type": "inject",
+        "z": "876e86ec8e42d839",
+        "name": "Gatilho automatico (20 min)",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "1200",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "[]",
+        "payloadType": "json",
+        "x": 1200,
+        "y": 200,
+        "wires": [
+            [
+                "1e91a5822dd39508",
+                "637cda5190871dc7"
+            ]
+        ]
+    },
+    {
+        "id": "39e7e403a2956fcc",
+        "type": "function",
+        "z": "876e86ec8e42d839",
+        "name": "Usuários Por Hora",
+        "func": "let accessDataPerHour = flow.get('accessDataPerHour') || [];\n\nconst now = new Date();\nconst currentHour = now.getHours();\n\nif (msg.payload === \"green\") {\n    let found = false;\n    for (let i = 0; i < accessDataPerHour.length; i++) {\n        if (accessDataPerHour[i].hora === currentHour) {\n            accessDataPerHour[i].usuarios++;\n            found = true;\n            break;\n        }\n    }\n\n    if (!found) {\n        accessDataPerHour.push({ hora: currentHour, usuarios: 1 });\n    }\n}\n\nflow.set('accessDataPerHour', accessDataPerHour);\n\nmsg.payload = accessDataPerHour;\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 910,
+        "y": 320,
+        "wires": [
+            [
+                "966567d87135466e"
+            ]
+        ]
+    },
+    {
+        "id": "966567d87135466e",
+        "type": "split",
+        "z": "876e86ec8e42d839",
+        "name": "",
+        "splt": "\\n",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "property": "payload",
+        "x": 1090,
+        "y": 320,
+        "wires": [
+            [
+                "58374fc66a56dbab"
+            ]
+        ]
+    },
+    {
+        "id": "58374fc66a56dbab",
+        "type": "change",
+        "z": "876e86ec8e42d839",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "payload.hora",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.usuarios",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1280,
+        "y": 320,
+        "wires": [
+            [
+                "24f3b43c140a4dd3"
+            ]
+        ]
+    },
+    {
+        "id": "24f3b43c140a4dd3",
+        "type": "ui_chart",
+        "z": "876e86ec8e42d839",
+        "name": "",
+        "group": "21989fba8825100d",
+        "order": 1,
+        "width": 17,
+        "height": 11,
+        "label": "Entradas Por Hora",
+        "chartType": "bar",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "100",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": true,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "x": 1490,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "592e3c11d2286603",
+        "type": "inject",
+        "z": "876e86ec8e42d839",
+        "name": "Gatilho automatico (5 horas)",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "18000",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "[]",
+        "payloadType": "json",
+        "x": 1210,
+        "y": 380,
+        "wires": [
+            [
+                "fb11ab92da093d11",
+                "24f3b43c140a4dd3"
+            ]
+        ]
+    },
+    {
+        "id": "1c7df9e97b4fca4e",
+        "type": "function",
+        "z": "876e86ec8e42d839",
+        "name": "GREEN",
+        "func": "let accessCount = flow.get('accessCount') || 0;\naccessCount++;\nflow.set('accessCount', accessCount);\nmsg.payload = accessCount;\nmsg.topic = \"Usuários Válidos\"\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 860,
+        "y": 540,
+        "wires": [
+            [
+                "7e3925279f469f3d",
+                "0925e252b6a94719",
+                "a371542c1084ef1e"
+            ]
+        ]
+    },
+    {
+        "id": "0925e252b6a94719",
+        "type": "ui_chart",
+        "z": "876e86ec8e42d839",
+        "name": "",
+        "group": "e735db5d84294151",
+        "order": 5,
+        "width": 14,
+        "height": 8,
+        "label": "Tipos de Acessos Por Dia",
+        "chartType": "pie",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "x": 1170,
+        "y": 580,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "bfedd573da713b03",
+        "type": "function",
+        "z": "876e86ec8e42d839",
+        "name": "DESCONHECIDO",
+        "func": "let unknowAccess = flow.get('unknowAccess') || 0;\nunknowAccess++;\nflow.set('unknowAccess', unknowAccess);\nmsg.payload = unknowAccess;\nmsg.topic = 'Usuários Desconhecidos'\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 890,
+        "y": 620,
+        "wires": [
+            [
+                "0925e252b6a94719"
+            ]
+        ]
+    },
+    {
+        "id": "b67a7c438fa100b4",
+        "type": "inject",
+        "z": "876e86ec8e42d839",
+        "name": "Reset pizza",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "86400",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "[]",
+        "payloadType": "json",
+        "x": 950,
+        "y": 680,
+        "wires": [
+            [
+                "0925e252b6a94719"
+            ]
+        ]
+    },
+    {
+        "id": "1e91a5822dd39508",
+        "type": "function",
+        "z": "876e86ec8e42d839",
+        "name": "reset acessos por minuto",
+        "func": "flow.set('accessDataPerMinute', []);\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1470,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "fb11ab92da093d11",
+        "type": "function",
+        "z": "876e86ec8e42d839",
+        "name": "reset acessos por hora",
+        "func": "flow.set('accessDataPerHour', []);\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1480,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e5c4bb1052ed1e43",
+        "type": "inject",
+        "z": "876e86ec8e42d839",
+        "name": "Gatilho automatico (24 horas)",
+        "props": [],
+        "repeat": "604800",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 250,
+        "y": 620,
+        "wires": [
+            [
+                "a4e3bb4f0344c9d7"
+            ]
+        ]
+    },
+    {
+        "id": "a4e3bb4f0344c9d7",
+        "type": "function",
+        "z": "876e86ec8e42d839",
+        "name": "reset acessos do dia",
+        "func": "flow.set('accessCount', 0);\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 500,
+        "y": 620,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "714d76215c1ab64b",
+        "type": "switch",
+        "z": "876e86ec8e42d839",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "green",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "red",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "desconhecido",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 3,
+        "x": 710,
+        "y": 580,
+        "wires": [
+            [
+                "1c7df9e97b4fca4e"
+            ],
+            [
+                "06ba6e6758890e1b"
+            ],
+            [
+                "bfedd573da713b03"
+            ]
+        ]
+    },
+    {
+        "id": "06ba6e6758890e1b",
+        "type": "function",
+        "z": "876e86ec8e42d839",
+        "name": "RED",
+        "func": "let accessDenied = flow.get('accessDenied') || 0;\naccessDenied++;\nflow.set('accessDenied', accessDenied);\nmsg.payload = accessDenied;\nmsg.topic = 'Usuários Não Válidos'\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 850,
+        "y": 580,
+        "wires": [
+            [
+                "0925e252b6a94719"
+            ]
+        ]
+    },
+    {
+        "id": "6356e0ea27028500",
+        "type": "ui_text",
+        "z": "876e86ec8e42d839",
+        "group": "f2341e2df8053285",
+        "order": 1,
+        "width": 4,
+        "height": 9,
+        "name": "",
+        "label": "Mensagem: ",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "x": 390,
+        "y": 320,
+        "wires": []
+    }
+]
